@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+
+import sys
+
+for n in sys.argv[1:]:
+if float(n)<0:
+	print(float(n))
+
+elif float(n)>0:
+	print(float(n))
+
+else
+	print(float(n))
