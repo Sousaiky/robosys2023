@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # PSDX-FileCopyrightText: 2023 Soshi Saiki
-
+# SPDX-License-Identifier: BSD-3-Clause
 import sys
 
 ans = 0

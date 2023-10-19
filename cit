@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2023 Soshi Saiki 　　　　　
+# SPDX-License-Identifier: GPL-3.0
 import sys
 
 
