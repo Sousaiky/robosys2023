@@ -2,12 +2,12 @@
 
 import sys
 
-for n in sys.argv[1:]:
-if float(n)<0:
-	print(float(n))
+ans = 0
+for line in sys.stdin:
+    try:
+        ans += int(line)
+    except:
+        ans += float(line)
 
-elif float(n)>0:
-	print(float(n))
+    print(ans)
 
-else
-	print(float(n))
