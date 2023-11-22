@@ -1,7 +1,7 @@
 # robosys2023
 ロボットシステム学
 
-# cit コマンド
+# cit1 コマンド
 ![test](https://github.com/Sousaiky/robosys2023/actions/workflows/test.yml/badge.svg)
 
 ./cit1から半角の空白以降に標準入力で打たれた数字を足す
