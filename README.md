@@ -1,7 +1,7 @@
 # robosys2023
 ロボットシステム学
 
-# plusコマンド
+# cit コマンド
 ![test](https://github.com/Sousaiky/robosys2023/actions/workflows/test.yml/badge.svg)
 
 *このソフトウェアパッケージは、三条項BSDライセンスの下、再頒布および使用が許可されます。
