@@ -12,11 +12,12 @@ for line in sys.stdin:
         ans += float(line)
 
 print(ans)
-        
-
+       
 amari = ans%2 #余り
 
 if amari == 1:
     print("奇数です")
-else:
+elif amari == 0:
     print("偶数です")
+else:
+    print("偶数でも奇数でもない")
