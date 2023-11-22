@@ -4,11 +4,19 @@
 import sys
 
 ans = 0
+amari = 0
 for line in sys.stdin:
     try:
         ans += int(line)
     except:
         ans += float(line)
 
-    print(ans)
+print(ans)
+        
 
+amari = ans%2 #余り
+
+if amari == 1:
+    print("奇数です")
+else:
+    print("偶数です")
