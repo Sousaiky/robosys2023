@@ -4,7 +4,11 @@
 # cit1 コマンド
 ![test](https://github.com/Sousaiky/robosys2023/actions/workflows/test.yml/badge.svg)
 
-./cit1から半角の空白以降に標準入力で打たれた数字を足す
+## 使い方
+seq 好きな整数 | ./cit1
+1から好きな整数までを足す
+小数点も含みたいときはseq 好きな整数 | sed 's/$/.それぞれの整数に足したい小数点以下の数字' | ./cit1
+計算結果が偶数か奇数かを計算して表示する
 
 ## 必要なソフトウェア
 * Python
