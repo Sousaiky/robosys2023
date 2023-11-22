@@ -2,7 +2,7 @@
 ロボットシステム学
 
 # plusコマンド
-![test](https://github/soshisaiki/robosys2023/actions/worlflows/test.yml/badge.svg)
+![test](https://github.com/Sousaiky/robosys2023/actions/workflows/test.yml/badge.svg)
 
 *このソフトウェアパッケージは、三条項BSDライセンスの下、再頒布および使用が許可されます。
 *このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）の者を、本人の許可を得て自信の著作としたものです。
