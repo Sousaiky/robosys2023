@@ -6,11 +6,12 @@ import sys
 ans = 0
 amari = 0
 for line in sys.stdin:
+    line = line.strip()
     try:
         ans += int(line)
     except:
         ans += float(line)
-
+    
 print(ans)
        
 amari = ans%2 #余り
