@@ -13,42 +13,74 @@ res=0
 
 ### I/O ###
 out=$(seq 1 | ./cit1)
-[ "${out}" == "1 奇数です" ] || ng ${LINENO}
+out1=$(echo "${out}" | awk '{print $1}')  # out をスペースで分割し、最初の部分を out1 に代入
+out2=$(echo "${out}" | awk '{print $2}')  # out をスペースで分割し、2 番目の部分を out2 に代入
+[ "${out1}" = 1 ] || ng ${LINENO}
+[ "${out2}" = "奇数です" ] || ng ${LINENO}
 
 out=$(seq 2 | ./cit1)
-[ "${out}" == "3 奇数です" ] || ng ${LINENO}
+out1=$(echo "${out}" | awk '{print $1}')
+out2=$(echo "${out}" | awk '{print $2}')
+[ "${out1}" = 3 ] || ng ${LINENO}
+[ "${out2}" = "奇数です" ] || ng ${LINENO}
 
 out=$(seq 3 | ./cit1)
-[ "${out}" == "6 偶数です" ] || ng ${LINENO}
+out1=$(echo "${out}" | awk '{print $1}')
+out2=$(echo "${out}" | awk '{print $2}')
+[ "${out1}" = 6 ] || ng ${LINENO}
+[ "${out2}" = "偶数です" ] || ng ${LINENO}
 
 out=$(seq 4 | ./cit1)
-[ "${out}" == "10 偶数です" ] || ng ${LINENO}
+out1=$(echo "${out}" | awk '{print $1}')
+out2=$(echo "${out}" | awk '{print $2}')
+[ "${out1}" = 10 ] || ng ${LINENO}
+[ "${out2}" = "偶数です" ] || ng ${LINENO}
 
 out=$(seq 5 | ./cit1)
-[ "${out}" == "15 奇数です" ] || ng ${LINENO}
+out1=$(echo "${out}" | awk '{print $1}')
+out2=$(echo "${out}" | awk '{print $2}')
+[ "${out1}" = 15 ] || ng ${LINENO}
+[ "${out2}" = "奇数です" ] || ng ${LINENO}
 
 out=$(seq 6 | ./cit1)
-[ "${out}" == "21 奇数です" ] || ng ${LINENO}
+out1=$(echo "${out}" | awk '{print $1}')
+out2=$(echo "${out}" | awk '{print $2}')
+[ "${out1}" = 21 ] || ng ${LINENO}
+[ "${out2}" = "奇数です" ] || ng ${LINENO}
 
 out=$(seq 7 | ./cit1)
-[ "${out}" == "28 偶数です" ] || ng ${LINENO}
+out1=$(echo "${out}" | awk '{print $1}')
+out2=$(echo "${out}" | awk '{print $2}')
+[ "${out1}" = 28 ] || ng ${LINENO}
+[ "${out2}" = "偶数です" ] || ng ${LINENO}
 
 out=$(seq 8 | ./cit1)
-[ "${out}" == "36 偶数です" ] || ng ${LINENO}
+out1=$(echo "${out}" | awk '{print $1}')
+out2=$(echo "${out}" | awk '{print $2}')
+[ "${out1}" = 36 ] || ng ${LINENO}
+[ "${out2}" = "奇数です" ] || ng ${LINENO}
 
 out=$(seq 9 | ./cit1)
-[ "${out}" == "45 奇数です" ] || ng ${LINENO}
+out1=$(echo "${out}" | awk '{print $1}')
+out2=$(echo "${out}" | awk '{print $2}')
+[ "${out1}" = 45 ] || ng ${LINENO}
+[ "${out2}" = "奇数です" ] || ng ${LINENO}
 
 out=$(seq 10 | ./cit1)
-[ "${out}" == "55 奇数です" ] || ng ${LINENO}
+out1=$(echo "${out}" | awk '{print $1}')
+out2=$(echo "${out}" | awk '{print $2}')
+[ "${out1}" = 55 ] || ng ${LINENO}
+[ "${out2}" = "奇数です" ] || ng ${LINENO}
 
 ### STRANGE INPUT ###
 out=$(echo あ | ./cit1)
-[ "$?" == 1 ] || ng ${LINENO}
+[ "$?" = 1 ] || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
 
 out=$(echo | ./cit1) #空文字
-[ "$?" == 1 ] || ng ${LINENO}
+[ "$?" = 1 ] || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
 
-[ "$res" -eq 0 ] && echo "OK"
+[ "$res" = 0 ] && echo OK
 exit $res
 
