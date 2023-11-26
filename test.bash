@@ -3,6 +3,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 #!/bin/bash
+
 ng () {
     echo "NG at Line $1"
     res=1
@@ -43,10 +44,11 @@ out=$(seq 10 | ./cit1)
 
 ### STRANGE INPUT ###
 out=$(echo あ | ./cit1)
-[ "$?" != 0 ] || ng ${LINENO}
+[ "$?" == 1 ] || ng ${LINENO}
 
 out=$(echo | ./cit1) #空文字
-[ "$?" != 0 ] || ng ${LINENO}
+[ "$?" == 1 ] || ng ${LINENO}
 
-[ "$res" == 0 ] && echo "OK"
+[ "$res" -eq 0 ] && echo "OK"
 exit $res
+
