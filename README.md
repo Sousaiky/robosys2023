@@ -1,4 +1,5 @@
 # robosys2023
+
 ロボットシステム学
 
 与えられた数字を1から足す
@@ -6,12 +7,15 @@
 例：入力が5なら1から５までを足す
 
 # cit1 コマンド
+
 ![test](https://github.com/Sousaiky/robosys2023/actions/workflows/test.yml/badge.svg)
 
 #特徴
+
 seqと数字の間に空白があっても数字がちゃんと認識できる
 
 ## 使い方
+
 seq 好きな整数 | ./cit1
 
 1から好きな整数までを足す
@@ -29,13 +33,16 @@ seq 好きな整数 | ./cit1
          偶数でも奇数でもない
 
 ## 必要なソフトウェア
+
 * Python
   * テスト済み: 3.7~3.10
 
 ## テスト環境
+
 * Ubuntu 20.03
 
 #著者
+
 齋木壯心
 
 千葉工業大学
@@ -47,6 +54,9 @@ seq 好きな整数 | ./cit1
 sousaiky@yahoo.com
 
 *このソフトウェアパッケージは、三条項BSDライセンスの下、再頒布および使用が許可されます。
+
 *このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）の者を、本人の許可を得て自信の著作とし,いくつかの機能を追加したものです。
-　*[ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys2022)
+
+*[ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys2022)
+
 *©2023 Soshi Saiki
