@@ -21,8 +21,8 @@ out=$(seq 2 | ./cit1)
 out=$(seq 3 | ./cit1)
 [ "${out}" = "6 偶数です" ] || ng ${LINENO}
 
-#out=$(seq 4 | ./cit1)
-#[ "${out}" = "10 偶数です" ] || ng ${LINENO}
+out=$(seq 4 | ./cit1)
+[ "${out}" = "10 偶数です" ] || ng ${LINENO}
 
 out=$(seq 5 | ./cit1)
 [ "${out}" = "15 奇数です" ] || ng ${LINENO}
