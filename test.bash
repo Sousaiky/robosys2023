@@ -12,41 +12,41 @@ ng () {
 res=0
 
 ### I/O ###
-out=$(seq 1 | ./cit1)
+out=$(seq 1 | ./plus)
 [ "${out}" = "1 奇数です" ] || ng ${LINENO}
 
-out=$(seq 2 | ./cit1)
+out=$(seq 2 | ./plus)
 [ "${out}" = "3 奇数です" ] || ng ${LINENO}
 
-out=$(seq 3 | ./cit1)
+out=$(seq 3 | ./plus)
 [ "${out}" = "6 偶数です" ] || ng ${LINENO}
 
-out=$(seq 4 | ./cit1)
+out=$(seq 4 | ./plus)
 [ "${out}" = "10 偶数です" ] || ng ${LINENO}
 
-out=$(seq 5 | ./cit1)
+out=$(seq 5 | ./plus)
 [ "${out}" = "15 奇数です" ] || ng ${LINENO}
 
-out=$(seq 6 | ./cit1)
+out=$(seq 6 | ./plus)
 [ "${out}" = "21 奇数です" ] || ng ${LINENO}
 
-out=$(seq 7 | ./cit1)
+out=$(seq 7 | ./plus)
 [ "${out}" = "28 偶数です" ] || ng ${LINENO}
 
-out=$(seq 8 | ./cit1)
+out=$(seq 8 | ./plus)
 [ "${out}" = "36 偶数です" ] || ng ${LINENO}
 
-out=$(seq 9 | ./cit1)
+out=$(seq 9 | ./plus)
 [ "${out}" = "45 奇数です" ] || ng ${LINENO}
 
-out=$(seq 10 | ./cit1)
+out=$(seq 10 | ./plus)
 [ "${out}" = "55 奇数です" ] || ng ${LINENO}
 
 ### STRANGE INPUT ###
 #out=$(echo あ | ./cit1)
 #[ "$?" = 1 ] || ng ${LINENO}
 
-out=$(echo | ./cit1) #空文字
+out=$(echo | ./plus) #空文字
 [ "$?" = 0 ] || ng ${LINENO}  
 
 [ "$res" = 0 ] && echo "OK"
