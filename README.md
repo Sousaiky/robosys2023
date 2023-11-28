@@ -8,7 +8,7 @@
 
 ![test](https://github.com/Sousaiky/robosys2023/actions/workflows/test.yml/badge.svg)
 
-##特徴
+###特徴
 
 seqと数字の間に空白があっても数字がちゃんと認識できる
 
