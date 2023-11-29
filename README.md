@@ -1,13 +1,14 @@
 ## robosys2023
 * このリポジトリにはplus,test.bashが含まれます  
+* 標準入力から与えられた数字を1から足します  
+* 例：入力が5なら1から５までを足します  
 
 ## plus コマンド
 
 ![test](https://github.com/Sousaiky/robosys2023/actions/workflows/test.yml/badge.svg)  
-
-* 標準入力から与えられた数字を1から足します    
-* 例：入力が5なら1から５までを足します    
+ 
 * テストの結果は問題なく動作します  
+* 出た答えの奇数偶数を判別します  
 
 ## 導入方法
 
