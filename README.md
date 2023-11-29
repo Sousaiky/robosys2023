@@ -1,26 +1,22 @@
 ## robosys2023
- 
-* このソフトウェアパッケージは、三条項BSDライセンスの下、再配布および使用が許可されます。    
-* 千葉工業大学先進工学部未来ロボティクス学科のロボットシステム学で作成したレポジトリ  
-* このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）の物を、本人の許可を得て自身の著作とし,いくつかの機能を追加したものです。
-* [ ryuichiueda/my_slides/robosys_2022](https://github.com/ryuichiueda/my_slides/blob/master/robosys_2022/lesson4.md)
+このリポジトリにはplus,test.bashが含まれます  
 
 ## plus コマンド
 
-![test](https://github.com/Sousaiky/robosys2023/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/Sousaiky/robosys2023/actions/workflows/test.yml/badge.svg)  
 
-* 標準入力から与えられた数字を1から足す  
-* 例：入力が5なら1から５までを足す  
-* テストの結果は問題なく動作
+* 標準入力から与えられた数字を1から足します    
+* 例：入力が5なら1から５までを足します    
+* テストの結果は問題なく動作します  
 
 ## 導入方法
 
-* 下記のコマンドを実行  
-$ git clone https://github.com/sousaiky/robosys2023.git 
+* 下記のコマンドを実行してください  
+` $ git clone https://github.com/sousaiky/robosys2023.git ` 
 
 ## 特徴
 
-* seqと数字の間に空白があっても数字がちゃんと認識できる
+* seqと数字の間に空白があっても数字がちゃんと認識できます  
 
 ## 使い方
 
@@ -38,13 +34,17 @@ seq 5 | sed 's/$/.0.1' | ./plus
          偶数でも奇数でもない  
 ```
 
-## 必要なソフトウェア
+## ライセンス
 
-* Python  
-  * テスト済み: 3.7~3.10  
+* このソフトウェアパッケージは、三条項BSDライセンスの下、再配布および使用が許可されます。
+* 千葉工業大学先進工学部未来ロボティクス学科のロボットシステム学で作成したレポジトリ
+* このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）の物を、本人の許可を得て自身の著作とし,いくつかの機能を追加したものです。
+* [ ryuichiueda/my_slides/robosys_2022](https://github.com/ryuichiueda/my_slides/blob/master/robosys_2022/lesson4.md)
 
 ## テスト環境
 
 * Ubuntu 20.03
+* Python
+  * テスト済み: 3.7~3.10
 
 * ©2023 Soshi Saiki
