@@ -18,19 +18,19 @@
 ## 使い方
 
 ```
-seq 5 | ./plus   
+$ seq 5 | ./plus   
          15  
          奇数です
 
-seq        5 | ./plus
+$ seq        5 | ./plus
          15
          奇数です  
   
-seq 5 | sed 's/$/.1' | ./plus      
+$ seq 5 | sed 's/$/.1' | ./plus      
          15.5  
          偶数でも奇数でもない
   
-seq 5 | sed 's/$/.11' | ./plus
+$ seq 5 | sed 's/$/.11' | ./plus
          15.55
          偶数でも奇数でもない
 ```
