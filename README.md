@@ -7,8 +7,8 @@
 ## plus コマンド
 
 ![test](https://github.com/Sousaiky/robosys2023/actions/workflows/test.yml/badge.svg)
- 
-標準入力から与えられた数字を1から足す
+
+標準入力から与えられた数字を1から足す  
 例：入力が5なら1から５までを足す  
 テストの結果は問題なく動作
 
