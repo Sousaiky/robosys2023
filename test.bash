@@ -43,8 +43,6 @@ out=$(seq 10 | ./plus)
 [ "${out}" = "55 奇数です" ] || ng ${LINENO}
 
 ### STRANGE INPUT ###
-#out=$(echo あ | ./cit1)
-#[ "$?" = 1 ] || ng ${LINENO}
 
 out=$(echo | ./plus) #空文字
 [ "$?" = 0 ] || ng ${LINENO}  
