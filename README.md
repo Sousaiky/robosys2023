@@ -1,13 +1,16 @@
 ## robosys2023
   
-*このソフトウェアパッケージは、三条項BSDライセンスの下、再頒布および使用が許可されます。
-
+*このソフトウェアパッケージは、三条項BSDライセンスの下、再頒布および使用が許可されます。  
+連絡先:s22C1050ML@s.chibakoudai.jp  
+ライセンス:https://github.com/Sousaiky/robosys2023/blob/main/LICENSE  
+千葉工業大学先進工学部未来ロボティクス学科のロボットシステム学で作成したレポジトリ
 ## plus コマンド
 
 ![test](https://github.com/Sousaiky/robosys2023/actions/workflows/test.yml/badge.svg)
  
 標準入力から与えられた数字を1から足す
-例：入力が5なら1から５までを足す
+例：入力が5なら1から５までを足す  
+テストの結果は問題なく動作
 
 ## 特徴
 
@@ -16,15 +19,15 @@ seqと数字の間に空白があっても数字がちゃんと認識できる
 ## 使い方
 
 ```
-seq 好きな整数 | ./plus  
-1から好きな整数までを足す  
-実行結果:seq 5 | ./plus  
+seq 5 | ./plus   
          15  
+         奇数です
+
+seq        5 | ./plus
+         15
          奇数です  
-小数点も含みたいとき  
-seq 好きな整数 | sed 's/$/.それぞれの整数に足したい小数点以下の数字' | ./plus  
-計算結果が偶数か奇数かを計算して表示する  
-実行結果:seq 5 | sed 's/$/.1/' | ./plus  
+  
+seq 5 | sed 's/$/.0.1' | ./plus      
          15.5  
          偶数でも奇数でもない  
 ```
@@ -39,11 +42,7 @@ seq 好きな整数 | sed 's/$/.それぞれの整数に足したい小数点以
 * Ubuntu 20.03
 
 ## 著者
-
-佐伯総士  
-千葉工業大学  
-先進工学部未来ロボティクス学科  
-so@google.com    
+ 
 *このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）の物を、本人の許可を得て自身の著作とし,いくつかの機能を追加したものです。  
-*[ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)  
+*[ryuichiueda/my_slides/robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)  
 *©2023 Soshi Saiki
