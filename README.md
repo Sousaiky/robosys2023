@@ -40,11 +40,13 @@ seq 5 | sed 's/$/.0.1' | ./plus
 * 千葉工業大学先進工学部未来ロボティクス学科のロボットシステム学で作成したレポジトリ
 * このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）の物を、本人の許可を得て自身の著作とし,いくつかの機能を追加したものです。
 * [ ryuichiueda/my_slides/robosys_2022](https://github.com/ryuichiueda/my_slides/blob/master/robosys_2022/lesson4.md)
+https://github.com/Sousaiky/robosys2023/blob/main/LICENSE  
 
 ## テスト環境
 
 * Ubuntu 20.03
 * Python
   * テスト済み: 3.7~3.10
+https://github.com/Sousaiky/robosys2023/blob/main/test.bash  
 
 * ©2023 Soshi Saiki
