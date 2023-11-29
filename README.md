@@ -1,5 +1,5 @@
 ## robosys2023
-このリポジトリにはplus,test.bashが含まれます  
+* このリポジトリにはplus,test.bashが含まれます  
 
 ## plus コマンド
 
