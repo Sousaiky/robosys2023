@@ -1,6 +1,6 @@
 ## robosys2023
   
-*このソフトウェアパッケージは、三条項BSDライセンスの下、再頒布および使用が許可されます。  
+*このソフトウェアパッケージは、三条項BSDライセンスの下、再配布および使用が許可されます。  
 連絡先:s22C1050ML@s.chibakoudai.jp  
 ライセンス:https://github.com/Sousaiky/robosys2023/blob/main/LICENSE  
 千葉工業大学先進工学部未来ロボティクス学科のロボットシステム学で作成したレポジトリ
@@ -10,7 +10,9 @@
 
 標準入力から与えられた数字を1から足す  
 例：入力が5なら1から５までを足す  
-テストの結果は問題なく動作
+テストの結果は問題なく動作  
+*このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）の>物を、本人の許可を得て自身の著作とし,いくつかの機能を追加したものです。  
+*[ryuichiueda/my_slides/robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
 
 ## 特徴
 
@@ -41,8 +43,4 @@ seq 5 | sed 's/$/.0.1' | ./plus
 
 * Ubuntu 20.03
 
-## 著者
- 
-*このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）の物を、本人の許可を得て自身の著作とし,いくつかの機能を追加したものです。  
-*[ryuichiueda/my_slides/robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)  
 *©2023 Soshi Saiki
